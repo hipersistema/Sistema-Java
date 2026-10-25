@@ -1,0 +1,64 @@
+2026/09/22 15:51:36:263 INFORMACIÓN Using appdir from default (cwd): C:\NewPosline
+2026/09/22 15:51:36:269 INFORMACIÓN ------------------ VM Info ------------------
+2026/09/22 15:51:36:269 INFORMACIÓN -- OS Name: Windows 10
+2026/09/22 15:51:36:269 INFORMACIÓN -- OS Arch: amd64
+2026/09/22 15:51:36:269 INFORMACIÓN -- OS Vers: 10.0
+2026/09/22 15:51:36:270 INFORMACIÓN -- Java Vers: 1.8.0_491
+2026/09/22 15:51:36:270 INFORMACIÓN -- Java Home: C:\Program Files\Java\jre1.8.0_491
+2026/09/22 15:51:36:270 INFORMACIÓN -- User Name: soporte
+2026/09/22 15:51:36:270 INFORMACIÓN -- User Home: C:\Users\soporte
+2026/09/22 15:51:36:270 INFORMACIÓN -- Cur dir: C:\NewPosline
+2026/09/22 15:51:36:270 INFORMACIÓN ---------------------------------------------
+2026/09/22 15:51:36:378 INFORMACIÓN Getdown starting [version=1.8.7, built=2022-05-24 10:43]
+2026/09/22 15:51:36:378 INFORMACIÓN Checking whether we need to use a proxy...
+2026/09/22 15:51:36:398 INFORMACIÓN Failed to find proxy settings in Windows registry [error=java.lang.UnsatisfiedLinkError: no jRegistryKey in java.library.path]
+2026/09/22 15:51:36:460 INFORMACIÓN Attempting to fetch without proxy: http://172.26.1.100:9000/newPosline/getdown.txt
+2026/09/22 15:51:36:495 INFORMACIÓN No proxy appears to be needed.
+2026/09/22 15:51:36:508 INFORMACIÓN Able to lock for updates: true
+2026/09/22 15:51:36:508 INFORMACIÓN Verifying application: http://172.26.1.100:9000/newPosline/
+2026/09/22 15:51:36:508 INFORMACIÓN Version: 202607081135
+2026/09/22 15:51:36:509 INFORMACIÓN Class: com.cplg.back.sesion.src.InicioSesion
+2026/09/22 15:51:36:509 INFORMACIÓN Failed to load digest: C:\NewPosline\digest2.txt (El sistema no puede encontrar el archivo especificado). Attempting recovery...
+2026/09/22 15:51:36:509 INFORMACIÓN Attempting to refetch 'digest.txt' from 'http://172.26.1.100:9000/newPosline/digest.txt'.
+2026/09/22 15:51:36:514 INFORMACIÓN No signing certs, not verifying digest.txt [path=digest.txt]
+2026/09/22 15:51:36:515 INFORMACIÓN Attempting to refetch 'digest2.txt' from 'http://172.26.1.100:9000/newPosline/digest2.txt'.
+2026/09/22 15:51:36:523 INFORMACIÓN No signing certs, not verifying digest.txt [path=digest2.txt]
+2026/09/22 15:51:36:562 INFORMACIÓN Resource failed digest check [rsrc=getdown.txt, computed=71e9bbe03a7df23a93750a645342cfbc69a9bf78c23f319253470e0121b06aeb, expected=cbe75917cdb19fd34d7f9d82ff39a9819aa0b2a16d05e12641dfebb06a580442]
+2026/09/22 15:51:36:563 INFORMACIÓN Attempting to refetch 'getdown.txt' from 'http://172.26.1.100:9000/newPosline/getdown.txt'.
+2026/09/22 15:51:36:577 INFORMACIÓN Attempting to refetch 'digest.txt' from 'http://172.26.1.100:9000/newPosline/digest.txt'.
+2026/09/22 15:51:36:580 INFORMACIÓN No signing certs, not verifying digest.txt [path=digest.txt]
+2026/09/22 15:51:36:582 INFORMACIÓN Attempting to refetch 'digest2.txt' from 'http://172.26.1.100:9000/newPosline/digest2.txt'.
+2026/09/22 15:51:36:585 INFORMACIÓN No signing certs, not verifying digest.txt [path=digest2.txt]
+2026/09/22 15:51:36:621 INFORMACIÓN Unable to read version file: C:\NewPosline\version.txt (El sistema no puede encontrar el archivo especificado)
+2026/09/22 15:51:36:648 INFORMACIÓN Resource failed digest check [rsrc=Util/Reportes/inventorydetail.jasper, computed=d3330d861f592a8de35a3c6d57b5ab8968043ec5abb5565239cc6c44efc96f05, expected=2a75ea311fb1a526144fa7a62411cbbcffbe9e66945fda25ee07ffc623c96b23]
+2026/09/22 15:51:36:649 INFORMACIÓN Resource failed digest check [rsrc=Util/Reportes/inventorydetaildifference.jasper, computed=9d4d2737fac8d400d0b0755a9cb2d55f29a4cb70323c715f0b460bfce0351fc5, expected=98332c7618c6e708383c1fd51b19e1b4606d47eefd8ff0abf4b52784aacc0cea]
+2026/09/22 15:51:36:656 INFORMACIÓN Resource failed digest check [rsrc=Util/Reportes/reportearticuloestadistico.jasper, computed=c42646618e8ec718363b5db3d011eb1e8ebd878aa1abc1ce245d0ce3c12231b9, expected=1a866ab92c4de297152b68e39759f019e46f8160cd1b2749c30427c3e40e975f]
+2026/09/22 15:51:36:658 INFORMACIÓN Resource failed digest check [rsrc=Util/Reportes/ReportsInventaryDifferents.jasper, computed=7d893bb46aab58c020853542746a6c02a28a1319d9b784815e9d9fae6b6d9c4d, expected=2280067eefca8b97d218d0985360c742cdbf48fa2980fc8e5e6d1dd27254e136]
+2026/09/22 15:51:39:561 INFORMACIÓN Resource failed digest check [rsrc=Bstore.jar, computed=cdca2f21797d5526b6fdd8085b83b09dc58e575e09999734270a8e5c68a585fe, expected=b17922644103ce407accedf9baf14f5e22de354716b6149f9e511d8160906ffb]
+2026/09/22 15:51:39:562 INFORMACIÓN Verified resources [count=7, alreadyValid=0, size=53584k, duration=2936ms]
+2026/09/22 15:51:39:562 INFORMACIÓN 5 of 7 rsrcs require update (0 assumed valid).
+2026/09/22 15:51:39:889 INFORMACIÓN Downloading 5 resources [totalBytes=58874809, maxConcurrent=3]
+2026/09/22 15:51:39:898 INFORMACIÓN Downloading resource [url=http://172.26.1.100:9000/newPosline/Util/Reportes/reportearticuloestadistico.jasper, size=50383]
+2026/09/22 15:51:39:904 INFORMACIÓN Downloading resource [url=http://172.26.1.100:9000/newPosline/Util/Reportes/ReportsInventaryDifferents.jasper, size=46415]
+2026/09/22 15:51:39:905 INFORMACIÓN Downloading resource [url=http://172.26.1.100:9000/newPosline/Util/Reportes/inventorydetaildifference.jasper, size=42681]
+2026/09/22 15:51:39:912 INFORMACIÓN Downloading resource [url=http://172.26.1.100:9000/newPosline/Bstore.jar, size=58697825]
+2026/09/22 15:51:39:923 INFORMACIÓN Downloading resource [url=http://172.26.1.100:9000/newPosline/Util/Reportes/inventorydetail.jasper, size=37505]
+2026/09/22 15:51:44:898 INFORMACIÓN Verifying application: http://172.26.1.100:9000/newPosline/
+2026/09/22 15:51:44:898 INFORMACIÓN Version: 202609221535
+2026/09/22 15:51:44:898 INFORMACIÓN Class: com.cplg.back.sesion.src.InicioSesion
+2026/09/22 15:51:44:899 INFORMACIÓN Unable to read version file: C:\NewPosline\version.txt (El sistema no puede encontrar el archivo especificado)
+2026/09/22 15:51:47:211 INFORMACIÓN Verified resources [count=7, alreadyValid=2, size=53584k, duration=2312ms]
+2026/09/22 15:51:47:212 INFORMACIÓN Checking Java version [current=1080491, wantMin=1080040, wantMax=0]
+2026/09/22 15:51:47:212 INFORMACIÓN Installing 5 downloaded resources:
+2026/09/22 15:51:47:212 INFORMACIÓN - C:\NewPosline\Util\Reportes\reportearticuloestadistico.jasper_new
+2026/09/22 15:51:47:214 INFORMACIÓN - C:\NewPosline\Util\Reportes\inventorydetaildifference.jasper_new
+2026/09/22 15:51:47:215 INFORMACIÓN - C:\NewPosline\Util\Reportes\ReportsInventaryDifferents.jasper_new
+2026/09/22 15:51:47:219 INFORMACIÓN - C:\NewPosline\Bstore.jar_new
+2026/09/22 15:51:47:226 INFORMACIÓN - C:\NewPosline\Util\Reportes\inventorydetail.jasper_new
+2026/09/22 15:51:47:228 INFORMACIÓN Install completed.
+2026/09/22 15:51:47:230 INFORMACIÓN Didn't find any custom environment variables, not setting any.
+2026/09/22 15:51:47:230 INFORMACIÓN Running C:\Program Files\Java\jre1.8.0_491\bin\javaw.exe
+  -classpath
+  Bstore.jar
+  -Dcom.threerings.getdown=true
+  com.cplg.back.sesion.src.InicioSesion

@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <comando id  =  "ReporteX">
+        <texto>
+            <valor value = "0x39"   type = "char"/>
+            <valor value = "0x1C"   type = "char"/>
+            <valor value = "X"   type = "String"/>
+            <valor value = "0x1C"   type = "char"/>
+            <valor value = "0x4E"   type = "char"/>
+        </texto>
+    </comando>
+    <comando id  =  "ReporteZ">
+        <texto>
+            <valor value = "0x39"   type = "char"/>
+            <valor value = "0x1C"   type = "char"/>
+            <valor value = "Z"   type = "String"/>
+            <valor value = "0x1C"   type = "char"/>
+            <valor value = "0x4E"   type = "char"/>
+        </texto>
+    </comando>
+    <comando id  =  "GetTime">
+        <texto>
+            <valor value = "0x0059"   type = "char"/>
+        </texto>
+    </comando>
+    <comando id  =  "Cut">
+        <texto>
+            <valor value = "0x004B"   type = "char"/>
+        </texto>
+     </comando>   
+     <comando id  =  "Free">
+        <texto>
+            <valor value = "0x0050"   type = "char"/>
+        </texto>
+    </comando>
+    <comando id  =  "ActivateSlip">
+        <texto>
+            <valor value = "0x00A0"   type = "char"/>
+        </texto>
+    </comando>
+    <comando id  =  "DesactivateSlip">
+        <texto>
+            <valor value = "0x00A1"   type = "char"/>
+        </texto>
+    </comando>
+    <comando id  =  "Reset">
+        <texto>
+            <valor value = "0x0007"   type = "char"/>
+            <valor value = "0x0008"   type = "char"/>
+            <valor value = "0x0009"   type = "char"/>
+            <valor value = "0x000A"   type = "char"/>
+	    <valor value = "0x000B"   type = "char"/>
+            <valor value = "0x000C"   type = "char"/>
+            <valor value = "0x000D"   type = "char"/>
+            <valor value = "0x000E"   type = "char"/>
+	    <valor value = "0x000F"   type = "char"/>
+            <valor value = "0x0010"   type = "char"/>
+            <valor value = "0x0011"   type = "char"/>
+            <valor value = "0x0012"   type = "char"/>
+	    <valor value = "0x0013"   type = "char"/>
+            <valor value = "0x0014"   type = "char"/>
+            <valor value = "0x0015"   type = "char"/>
+            <valor value = "0x0016"   type = "char"/>
+		<valor value = "0x0017"   type = "char"/>
+        </texto>
+    </comando>
+    <comando id  =  "OpenNonFiscalDoc">
+        <texto>
+            <valor value = "0x0048"   type = "char"/>
+        </texto>
+    </comando>
+    <comando id  =  "CloseNonFiscalDoc">
+        <texto>
+            <valor value = "0x004A"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "0x007F"   type = "char"/>
+        </texto>
+    </comando>
+    <comando id  =  "OpenFiscalDoc">
+        <texto>
+	    <valor value = "0x0040"   type = "char"/>
+            <valor value = "0x001C"   type = "char"/>
+            <valor value = "0x007F"   type = "char"/>
+            <valor value = "0x001C"   type = "char"/>
+            <valor value = "0x007F"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+            <valor value = "0x007F"   type = "char"/>
+            <valor value = "0x001C"   type = "char"/>
+            <valor value = "0x007F"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+            <valor value = "0x007F"   type = "char"/>
+            <valor value = "0x001C"   type = "char"/>
+            <valor value = "0x007F"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+            <valor value = "0x007F"   type = "char"/>
+            <valor value = "0x001C"   type = "char"/>
+            <valor value = "0x007F"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "0x007F"   type = "char"/>
+        </texto>
+    </comando>
+    <comando id  =  "OpenDevFiscalDoc">
+        <texto>
+	    <valor value = "0x0040"   type = "char"/>
+            <valor value = "0x001C"   type = "char"/>
+            <valor value = "0x007F"   type = "char"/>
+            <valor value = "0x001C"   type = "char"/>
+            <valor value = "0x007F"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+            <valor value = "0x007F"   type = "char"/>
+            <valor value = "0x001C"   type = "char"/>
+            <valor value = "0x007F"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+            <valor value = "0x007F"   type = "char"/>
+            <valor value = "0x001C"   type = "char"/>
+            <valor value = "0x007F"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+          <valor value = "0x007F"   type = "char"/>
+            <valor value = "0x001C"   type = "char"/>
+            <valor value = "0x007F"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "0x007F"   type = "char"/>
+        </texto>
+    </comando>
+   <comando id  =  "CancelTicket">
+        <texto>
+            <valor value = "0x0044"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "0x007F"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "00000000"   type = "int"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "0x0043"   type = "char"/>
+        </texto>
+    </comando>
+    <comando id  =  "GetSubTotal">
+        <texto>
+            <valor value = "0x0043"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "0x007F"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "0x007F"   type = "char"/>
+        </texto>
+    </comando>
+    <comando id  =  "PrintTotal">
+        <texto>
+            <valor value = "0x0045"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "A"   type = "String"/>
+        </texto>
+    </comando>
+    <comando id  =  "CloseFiscalDoc">
+        <texto>
+            <valor value = "0x0045"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "A"   type = "String"/>
+        </texto>
+    </comando>
+    <comando id  =  "PrintText">
+        <texto>
+            <valor value = "0x0041"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "variable"   type = "String"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "N"   type = "String"/>
+        </texto>
+    </comando>
+    <comando id  =  "OpenSaleWithDetailedHeader">
+        <texto>
+            <valor value = "0x0040"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "variable"   type = "String"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "variable"   type = "String"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "0x007F"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "0x007F"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "0x007F"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "0x007F"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "0x007F"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "0x007F"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "0x007F"   type = "char"/>		
+        </texto>
+    </comando>
+    <comando id  =  "OpenDevolutionWithDetailedHeader">
+        <texto>
+            <valor value = "0x0040"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "variable"   type = "String"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "variable"   type = "String"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "variable"   type = "String"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "variable"   type = "String"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "variable"   type = "String"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "variable"   type = "String"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "D"   type = "String"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "0x007F"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "0x007F"   type = "char"/>
+        </texto>
+    </comando>
+    <comando id  =  "SellItem">
+        <texto>
+            <valor value = "0x0042"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "variable"   type = "String"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "variable"   type = "String"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "variable"   type = "String"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "variable"   type = "String"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "M"   type = "String"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "0x007F"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "0x007F"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "0x007F"   type = "char"/>
+        </texto>
+    </comando>
+    <comando id  =  "AnulItem">
+        <texto>
+            <valor value = "0x0042"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "variable"   type = "String"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "variable"   type = "String"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "variable"   type = "String"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "variable"   type = "String"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "m"   type = "String"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "0x007F"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "0x007F"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "0x007F"   type = "char"/>
+        </texto>
+    </comando>
+    <comando id  =  "GlobalDiscount">
+        <texto>
+            <valor value = "0x0044"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+            <valor value = "0x007F"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "variable"   type = "String"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "0x0044"   type = "char"/>
+        </texto>
+    </comando>
+    <comando id  =  "PrintFiscalDiailyMemoryReport">
+        <texto>
+            <valor value = "0x003A"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+            <valor value = "variable"   type = "String"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "variable"   type = "String"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "variable"   type = "String"/>
+        </texto>
+    </comando>
+    <comando id  =  "PrintFiscalMemoryReportByReportNumber">
+        <texto>
+            <valor value = "0x003B"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+            <valor value = "variable"   type = "String"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "variable"   type = "String"/>
+	    <valor value = "0x001C"   type = "char"/>
+	    <valor value = "0x04E"   type = "char"/>
+        </texto>
+    </comando>
+    <comando id  =  "StatusIf">
+        <texto>
+            <valor value = "0x0038"   type = "char"/>
+	    <valor value = "0x001C"   type = "char"/>
+            <valor value = "variable"   type = "String"/>
+        </texto>
+    </comando>
+    <comando id  = "GetTime">
+    	<texto>
+    		<valor value = "0x0059" type = "char"/>
+    	</texto>
+    </comando>
+    <comando id  = "SetTime">
+    	<texto>
+    		<valor value = "0x0058" type = "char"/>
+    		<valor value = "0x001C" type = "char"/>
+    		<valor value = "variable" type = "String"/>
+    		<valor value = "0x001C" type = "char"/>
+    		<valor value = "variable" type = "String"/>
+    	</texto>
+    </comando>
+    <comando id  = "OpenLocker">
+    	<texto>
+    		<valor value = "0x007B" type = "char"/>
+    	</texto>
+    </comando>
+    <comando id = "PrintCheck">
+    	<text>
+    		<valor value = "0x00AA" type = "char"/>
+    		<valor value = "0x001C" type = "char"/>
+    		<valor value = "variable" type = "String"/>
+    		<valor value = "0x001C" type = "char"/>
+    		<valor value = "variable" type = "String"/>
+    		<valor value = "0x001C" type = "char"/>
+    		<valor value = "variable" type = "String"/>
+    		<valor value = "0x001C" type = "char"/>
+    		<valor value = "variable" type = "String"/>
+    		<valor value = "0x001C" type = "char"/>
+    		<valor value = "variable" type = "String"/>
+    		<valor value = "0x001C" type = "char"/>
+    		<valor value = "variable" type = "String"/>
+    		<valor value = "0x001C" type = "char"/>    		
+    	</text>
+    </comando>
+    <comando id = "SetTaxValues">
+	  <texto>
+	    <valor value = "0x0072" type = "char"/>
+            <valor value = "0x001C" type = "char"/>
+	    <valor value = "variable" type = "String"/>
+	    <valor value = "0x001C" type = "char"/>
+	    <valor value = "variable" type = "String"/>
+	    <valor value = "0x001C" type = "char"/>
+	    <valor value = "variable" type = "String"/>
+            <valor value = "0x001C" type = "char"/>
+	    <valor value = "variable" type = "String"/>
+            <valor value = "0x0000" type = "char"/>
+        </texto>
+    </comando>
+    <comando id = "EndorseCheck">
+	  <texto>
+	    <valor value = "0x00AB" type = "char"/>
+            <valor value = "0x001C" type = "char"/>
+	    <valor value = "variable" type = "String"/>
+	    <valor value = "0x001C" type = "char"/>
+	    <valor value = "variable" type = "String"/>
+	    <valor value = "0x001C" type = "char"/>
+	    <valor value = "variable" type = "String"/>
+            <valor value = "0x001C" type = "char"/>
+	    <valor value = "variable" type = "String"/>
+        </texto>
+    </comando>
+</root>

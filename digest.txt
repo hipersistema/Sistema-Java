@@ -1,0 +1,9 @@
+getdown.txt = 65b0383cc2d752ed0ee23e03996b8803
+Bstore.jar = 8743f0cf95d749563b34305283a6d0ba
+Util/Reportes/inventorydetail.jasper = 7cc15e4362e897efc6b54000cedf7be8
+Util/Reportes/inventorydetaildifference.jasper = cbed622e1b0ed7302b16b42619ab861f
+Util/Reportes/reportearticuloestadistico.jasper = 085a538aeea0b6a0d1c1e6d735fc8687
+Util/Reportes/ReportsInventaryDifferents.jasper = 7540e0a008c366c1a9c23609dc2ccfb7
+Varios/firma.jpg = e2a519e384dccad566772d70344461d4
+Varios/FONDO.jpg = 94d4f4863a9c653c81da453ab6692293
+digest.txt = 4789afa4eb87724efc2c1ba4b6d3563a

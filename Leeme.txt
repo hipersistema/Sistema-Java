@@ -1,0 +1,341 @@
+Actulizaciones 15/09/2016 Version Back-Store NE 2.8.5
+    Cambiar la version Parametros #96 Valor 'Back-Store NE 2.8.5'
+    1.- Business Retail Systems, c.a.
+    2.- Cambios en el modulo Factura Proveedor, mascaras de edicion y reportes
+    3.- Cambios en el modulo Ordenes de Compra, mascaras de edicion y reportes
+    4.- Ajustes de rendimiento y estabilidad.
+    5.- Cambio de version (Java JDK 7 Update 79)
+    6.- Cambio de version (IReport 5.6.0)
+
+Actualizaciones  al 26-11-2014 Versi�n 2.8.4
+    1.- M�dulo de Rubros.
+    2.- Mejoras en el m�dulo Cambio de Forma de Pago
+
+Actualizaciones  al 26-11-2014 Versi�n 2.8.3
+    1.- Cambio de Forma de Pago acepta todas las operaciones Posline
+    2.- Cambio de Forma de Pago pide Datos de Aprobaci�n para las formas de pago que lo amerite.
+    3.- En Control de Inventario los resultados se pueden exportar directamente a Excel
+
+Actualizaciones  al 05-06-2014 Versi�n 2.8.2
+    1.- Creaci�n del Reporte de Ganancias por Ubicaci�n.
+    2.- Parametrizaci�n de la actualizaci�n de inventario en el Cierre de D�as.
+    3.- Limpieza de Movimientos Temporales mediante el Cierre, configurado ultimos 7 dias.
+    4.- Creaci�n de la Carga por PDA del Control de Inventario.
+    5.- En Factura Proveedor y Orden de Compra se incorpor� un Area de Observaciones.
+    6.- Se arregl� manejo de Imagenes para Usuarios, Compan�a, Art�culo.
+    7.- Reporte de Ventas por Clientes se le agreg� tipo de cliente.
+    8.- Manejo de Fecha de Compra en Habladores.
+    9.- Validaci�n Cuadre de Cajero para no modificar un cajero ya liquidado.
+    10.- Inclusion de campo Etiqueta en Art�culo para Interface Balanzas CAS.
+    11.- Reporte en Bandeja de Habladores.
+    12.- Creaci�n de un campo status en Balanzas.
+    13.- Reporte de Ventas de Art�culos Compuestos.
+    14.- Ajuste en Art�culo Promoci�n.
+    15.- Creaci�n del Men� Precios por Lote.
+    16.- Parametrizaci�n del puerto y apertura de Varios Back-Store
+
+Actualizaciones  al 17-07-2013 Versi�n 2.8.1
+    1.- Cambio de Forma de Pago por el Back-Store.
+    2.- En Conciliaci�n se le incluy� la fecha y hora de modificaci�n.
+    3.- Cuadre de Cajero se incluy� la fecha y hora de modificaci�n.
+    4.- Se hicieron mejoras en las operaciones de eliminar y editar en los m�dulos de Factura Proveedor
+        Orden de Compra, Control de Inventario, Ajuste de Inventario y Transferencias de Mercanc�a.
+    5.- Se hizo un ajuste en la busqueda de la Conciliaci�n.
+
+Actualizaciones  al 14-06-2013 Versi�n 2.8
+    1.- En Transferencia de Mercanc�a se le agreg� la fecha en el reporte.
+    2.- Reporte de Ultimas Compras, se optimiz� la generaci�n del Reporte utilizando Textfield
+        de la b�squeda del art�culo.
+    3.- Se genera un instalador para la versi�n en lo sucesivo.
+    4.- Validaci�n del responsable con los usuarios del Mstore en el m�dulo Control de Inventario.
+    5.- Arreglado al Guardar Modelo, Talla y Color en el men� de Art�culo.
+    6.- Se arregl� el Reporte de Compras por Proveedor permitiendo el n�mero de factura hasta 15 caracteres.
+    7.- Se guarda los cambios del precio al Mayor en Factura Proveedor.
+    8.- Manejo de Par�metros en Factura Proveedor con relaci�n a Bandeja de habladores y actualizaci�n de precios.
+    9.- Se ingres� el inventario en la ficha del art�culo.
+    10.- Se mejor� el Reporte de Cambios de Precios
+    11.- En Ventas, se hizo un reporte con IVA para impresoras de Matriz de puntos.
+    12.- Se agreg� la sucursal como t�tulo en la pantalla principal del Back-Store.
+    13.- Ventas por el Back-Store (V�lido solo para impresoras PF 300)
+    14.- Nuevo Reporte de Ganancias por Proveedor
+ 
+Actualizaciones al 09-08-2012 Versi�n 2.7.D
+    1.- En Proveedores, se puede modificar el rif.
+    2.- Se optimizaron todas las b�squedas del sistema
+    3.- En Orden de Compra, se puede consultar la Utilidad
+    4.- En Orden de Compra si se desea se puede traer una cantidad sugerida para el pedido.
+    5.- Se incluy� el C�digo de Barra en el Reporte de Cambio de Precios
+    6.- Se arreglaron las dependencias del Departamento, L�nea y Familia de todos los reportes.
+    7.- Se ajustaron los Nombres de los reportes que no correspond�an al men�
+    8.- Se hicieron arreglos en el men� de Clientes para Buscar y Crear.
+    9.- Se arregl� el reporte de Compra - Venta.
+    10.- Se cre� el Reporte de Art�culos Comprados sin Ventas.
+    11.- Se cre� el Reporte Anulaci�n de L�neas
+    12.- Se cre� el Men� de Art�culos Regulados.
+    13.- Se arregl� en Reporte Ganancia de Art�culos con IVA.
+    14.- Se hizo la validaci�n de la versi�n.
+    15.- Se realizaron los Habladores de 2 por pagina, 6 por pagina y 12 por pagina
+
+Actualizaciones al 09-08-2012 Versi�n 2.7.2
+    1.- Se agreg� el Reporte de Art�culos Comprados no Vendidos.
+    2.- Selecci�n de m�ltiples sucursales.
+    3.- Cambio de Mercanc�a: multiplica Cantidad de Art�culos X Precio y muestra el total.
+    4.- Orden de Compra, al editar un registro se observa la utilidad.
+    5.- Eliminaci�n de Etiquetas en el pos.properties.
+ 
+Actualizaciones al 20-03-2012 Versi�n 2.7.1
+    1.- Se ampli� el campo nombre de proveedor y el de direcci�n.
+    2.- Se agreg� Responsable en el men� de Conciliaci�n.
+    3.- Se elimino la carpeta de im�genes. Todas ellas se incluyeron dentro del ejecutable.
+    4.- Se optimiz� la pantalla de Cliente utilizando campos de relevancia.
+    5.- Se ingreso al reporte de cotizaciones el Cajero, Fecha, Cotizaci�n y la Caja.
+    6.- Se hizo el reporte general de las cotizaciones.
+    7.- Se agreg� un nuevo criterio de b�squeda en el men� de clientes (perfiles).
+    8.- Se agreg� un nuevo criterio de b�squeda en el Reporte de Ventas por Clientes (perfiles).
+ 
+Actualizaciones al 11-01-2012 Versi�n 2.7
+    1.- Se cre� el men� de Cotizaciones.
+    2.- Se permite decimales en las cantidades del Men� Transferencia de Mercanc�a
+    3.- Se parametriz� el uso de Control de Inventario, permite seleccionar sumar o sustituir stock de 
+        art�culos en los almacenes.
+    4.- Cambio de Mercanc�a actualiza inventario si se desea.
+    5.- Se muestra un mensaje de advertencia en Cuadre de Cajero y Conciliaci�n al momento de colocar
+        el estatus el liquidado.
+    6.- Se bloquea las opciones de estatus si este es igual a liquidado en tiempo de modificaci�n o inclusi�n en
+        los men� de Cuadre de Cajero y Conciliaci�n.
+    7.- En Factura Proveedor, se arregl� la compra de un art�culo con par�metro impuesto incluido hacia bandeja de habladores
+    8.- En el men� Cambio de Precio, se deshabilit� el descuento comercial ya que no existe este tipo de operaci�n.
+    9.- Nuevo Par�metro de art�culo para la Venta por Unidad en Balanzas.
+    10.- Desde Habladores, si el Art�culo es pre-empacado debe ir a balanzas.
+ 
+Actualizaciones al 15-09-2011 Versi�n 2.6.D
+    1.- Se cambi� el Formato de Fecha.
+    2.- En cajeros, ahora se visualizan todos los campos.
+    3.- Se eliminaron los men�s de desposte.
+    4.- Se crea la restricci�n de ventas en los art�culos. 
+    5.- Se eliminaron las etiquetas internas de todas las clases.
+    6.- Se arregl� Modificar L�nea; no actualizaba.
+    7.- Se hizo en Cambios de Precios un m�dulo para cargar archivos planos y actualizar as� masivamente los precios.
+    8.- Se cre� el modulo para transferir art�culos a las Balanzas CAS CL por medio de un archivo plano en el men�
+        de habladores y bandeja de habladores.
+    9.- Se cre� un men� nuevo denominado Origen.
+    10.- En Art�culos se incluy� en clasificaci�n extra el origen y CPE.
+    11.- Se arregl� la carga de la Bandeja de Habladores por medio del PDA.
+    12.- Se agreg� al reporte interno de Cambio de Mercanc�a un total general de los articulos x costo.
+    13.- Se agreg� la interfaz de balanza.
+    14.- Se increment� el n�mero de factura, control y orden de compra a la Factura Proveedor y Orden de compra.
+    15.- En el m�dulo de Recepci�n de PDA se habilito el campo de factura para poder modificarlo.
+    16.- Se ajust� Factura Proveedor y Orden de Compra en cuanto al precio costo y venta de Art�culos con impuesto incluido.
+    17.- Se arregl� Cambio de Mercanc�a en cuanto al formato de los n�meros.
+ 
+Actualizaciones al 29-08-2011 Versi�n 2.6.C
+    1.- Reporte Nuevo: Reporte de Descuento
+    2.- Se hizo un ajuste al men� cliente (Buscar Clientes)
+    3.- Al Reporte Cambio de Precios se le incluyo algunos criterios de selecci�n de precios
+ 
+Actualizaciones al 20-07-2011 Versi�n 2.6.B
+    1.- Creaci�n del Usuario PDA.
+    2.- Creaci�n de la Recepci�n PDA.
+    3.- Configuraci�n Factura Proveedor y Orden de Compra para la Recepci�n PDA.
+    4.- Se eliminaron las etiquetas del pos.properties de las tablas maestras.
+    5.- Se cambio el tama�o del nombre y direcci�n del cliente a 140 caracteres. Se coloc� un TextArea para
+        esos campos.
+    6.- Se arregl� en clientes el uso del TAB en nombre y direcci�n.
+    7.- Se agreg� un car�cter m�s (12 caracteres) en el campo C�dula de Clientes.
+    8.- Se arregl� el Hist�rico de Precios cuando el empleado es null.
+    9.- Se arregl� la pantalla de Cambio de Precio.
+    10.- Se hicieron ajustes (validaciones) en los criterios de b�squedas en los reportes
+    11.- Se hizo una modificaci�n en B�squeda de clientes, (ahora no hace falta incluir el tipo de cliente).
+ 
+Actualizaciones al 28-03-2011 Versi�n 2.6.A
+    1.- Se arregl� Art�culo en Promoci�n con respecto a los Art�culos con iva incluido.
+    2.- Se realiz� el Reporte de Ventas x Departamento.
+    3.- Se realiz� el Reporte de Compras (General y Detallado).
+    4.- Se arregl� el reporte de Art�culos Comprados.
+ 
+Actualizaciones al 24-01-2011 Versi�n 2.6
+    1.- Cambio de Controlador JDBC 5.1.10.
+    2.- Cambio de versi�n de IReport 4.0.
+    3.- Cambios en la etiqueta EMPLOYEDTABLE: en lugar de sellerID = sellerId (No mostraba reporte 
+        de Usuarios).
+    4.- Se arregl� el men� C�digo de Barra junto con el Reporte General. Ahora se muestra Art�culo, 
+        Descripci�n y Fecha de Creaci�n.
+    5.- Se arregl� el men� Precio Actual junto con su reporte. Se muestra ahora la Descripci�n del 
+        Art�culo.
+    6.- Se acomod� el men� Clientes junto con su ordenamiento por c�dula y su reporte.
+    7.- Los reportes Art�culos Promoci�n y Art�culos Proveedor fueron arreglados
+    8.- Se arreglaron los tipos de perfiles, tipos de cuantas bancarias, Motivo de Inventario y todos 
+        sus respectivos reportes.
+    9.- Se arregl� la B�squeda de Facturas.
+    10.- Los campos de Compa��a en Sucursal y Libro de Ventas, fueron arreglados sus procedimientos al 
+         igual que el t�tulo de sus paneles. (Ten�an como t�tulo: Promoci�n)
+    11.- Se orden� por itemID el men� de habladores para buscar por art�culos.
+    12.- Ajuste de Inventario, se valid� que cuando el estatus sea liquidado, no permite ni eliminar 
+         ni modificar.
+    13.- Se valid� el ingreso del C�digo del producto en el men� de art�culo.
+    14.- Se arreglo el men� precio actual en su segunda pesta�a haciendo el ordenamiento por fecha, hora 
+         y tipo de precio de manera descendente.
+    15.- La b�squeda de art�culos en los men� Factura Proveedor y Orden de Compra vienen ahora ordenados por art�culo.
+    16.- Se arregl� Orden de Compra con relaci�n al cambio del art�culo 18.
+    17.- Cambio de Precio: error al procesar una marca con longitud mayor a 3.
+    18.- Se le asign� unos �conos a los botones atr�s y siguiente en art�culo de almac�n.
+    19.- Se le coloc� un �cono al bot�n proceso en Cambio de Precio.
+    20.- Se le adjunt� �conos a los botones de atr�s y siguiente de las operaciones generales.
+    21.- Se arreglo el reporte Art�culo con problemas.
+    22.- Reporte Stock de Art�culos, se valid� el numero de caracteres de la marca.
+    23.- En denominaci�n, se valid� el n�mero de d�gitos para la cantidad.
+    24.- Se arregl� la b�squeda del men� de departamento.
+    25.- Se arreglaron los reportes Etiquetas Libres y etiquetas.
+    26.- Cambio de driver JDBC mysql-connector-java-commercial-5.1.14-bin.
+    27.- Se compilaron los diferentes tipos de habladores.
+    28.- En art�culo de almac�n, en el check no mostrar art�culos en cero fue arreglado la paginaci�n.
+    29.- Se mejor� el Reporte Compra Venta.
+    30.- Se mejor� a nivel de redondeo el reporte de art�culos vendidos.
+    31.- Se arregl� el n�mero m�ximo de caracteres permitidos en el nombre del usuario del sistema Posline.
+    32.- Se valid� el n�mero m�ximo de d�as v�lidos para el usuario bstore y fstore en el men� usuarios.
+    33.- Se arregl� la edici�n de Orden de Compra con los impuestos de licor (otros impuestos y otros).
+    34.- Se minimiz� el tama�o de la letra en el cuadre de cajero.
+    35.- Se valid� el Stock de Art�culos en la Transferencia de Mercanc�a.
+    36.- Se mejor� la b�squeda de familias.
+    37.- Se arregl� Precio Actual, no coincid�an los % de ganancias ni los precios.
+    38.- En la pantalla de art�culos, cuando se quiere crear un nuevo c�digo de barra, por defecto se colocaba
+         la descripci�n corta, ahora se muestra la larga.
+    39.- Reporte por Categor�as, fue arreglado los criterios de selecci�n dpto, l�nea y familia.
+    40.- En conciliaci�n, se inhabilit� el bot�n de sucursal en la operaci�n buscar.
+ 
+Actualizaciones al 09-11-2010 Versi�n 2.5H
+    1.- Men� Factura Proveedor, cuando una factura tiene estatus liquidada, no se puede eliminar.
+    2.- Men� Orden de Compra, cuando una Orden de Compra tiene estatus liquidada, no se puede eliminar.
+    3.- Men� Cuadre de Cajero, se elimin� el bot�n guardar; as�, cuando se ingresa las formas de
+        pago se va guardando en la base de datos autom�ticamente.
+    4.- Arreglado en Factura Proveedor y en Orden de Compra el porcentaje de ganancia al mayor.
+    5.- Se realiz� el Reporte Facturas en Espera ubicado en el m�dulo de Reportes, carpeta Reportes 
+        de Art�culos.
+    6.- Se realiz� el Reporte de Facturas con Descuento en el m�dulo de Reportes, carpeta Reportes de 
+        Art�culos.
+    7.- Se arregl� el precio de venta y Costo cuando el art�culo tiene el par�metro de impuesto 
+        incluido en Factura Proveedor.
+    8.- Se mejor� el ingreso simultaneo de art�culos, si incluyen el mismo c�digo, se maneja el error, 
+        permitiendo corregir.
+    9.- Se ingres� una nueva letra para los clientes que deseen registrarse en el sistema, la letra 
+        es "O" de Otros y debe tener hasta un m�ximo de 15 caracteres, los dem�s clientes (V, E, J, P, G)
+        deben ser de 9 o menos caracteres.
+    10.- En tiempo de consulta, el cuadre de cajero modificaba el responsable, problema solucionado.
+    11.- En conciliaci�n, cuando se busca y luego se desea modificar esa conciliaci�n sale un error, solucionado.
+    12.- Se arreglo el reporte Factura Proveedor General, hab�a un error en el procedimiento 
+         GetDataToReportSupplyInvoiceDetail donde se restaba el porcentaje de descuento y no el monto
+         de ese porcentaje.
+    13.- Se corrigi� en Factura Proveedor el campo del Articulo 18.
+    14.- Se hizo el Reporte Compra - Venta (Req. Cliente).
+ 
+Actualizaciones al 09-11-2010 Versi�n 2.5G
+    1.- Se orden� por descripci�n todos los botones para buscar art�culos.
+    2.- Se orden� por c�digo el men� Cambio de Mercanc�a.
+    3.- En Cuadre de Cajero, no se estaba inicializando el bot�n de cerrar todas las cajas.
+    4.- Se modific� el tama�o del c�digo de Cuadre de Cajero. Esto imped�a conciliar todas las cajas 
+        de un mismo cajero.
+    5.- Se arregl� la Factura Proveedor cuando se llama una orden de compra ahora si se toma en 
+        cuenta los descuentos.
+    6.- Se arregl� el bot�n Eliminar de la pesta�a C�digos de Barra en el men� Art�culos.
+    7.- Se corrigi� el error en Art�culos con Problemas donde debe seleccionarse alg�n checkbox o 
+        criterio de b�squeda para efectuar el reporte.
+    8.- Se arregl� el Reporte de Art�culos Comprados.
+    9.- Se acomod� la pantalla inicial de Precio Actual, ahora tenemos dividido el c�digo y la 
+        descripci�n del art�culo.
+    10.- Reporte Estad�stico de Inventario se arregl� su tama�o.
+    11.- Se mejor� la b�squeda de Factura Proveedor.
+    12.- Reportes Ventas por Proveedor, fue arreglado. Aparec�an repetidos los art�culos.
+    13.- Se le agreg� el Responsable en Orden de Compra. Para ello se agrego a la tabla purchaseOrder 
+         el campo responsable.
+    14.- Movimientos por Art�culos: faltaba indicar con un asterisco la etiqueta Art�culos.
+    15.- Se modific� el procedimiento InsertActualPriceTemp para que al agregar un Art�culo a la 
+         Bandeja de Habladores, se coloc� el estado de no impreso.
+    16.- Al modificar una Factura Proveedor, no actualizaba el responsable. Dejaba el mismo que creaba 
+         la primera vez dicha Factura.
+    17.- Se corrigi� la Consulta de Factura, cuando eliminaban a un empleado de la base de datos, 
+         generaba un error.
+    18.- Al buscar un Cuadre de Cajero estaba habilitado el check Todas las Cajas y el bot�n Conciliaci�n.
+    19.- Se incorpor� en los reportes de Orden de Compra el Responsable.
+    20.- Al buscar una Factura Proveedor, se ten�a habilitado los Check Box de Factura General y 
+         Lista de Precios. Se inhabilitaron para tal fin.
+    21.- Arreglado Ventas por Clientes, no operaba bien el total del cliente en el Reporte Resumido.
+    22.- Se arregl� las retenciones en el Libro de Ventas.
+    23.- Se ajust� el procedimiento de Consulta de Facturas para que cuando se elimine un empleado, 
+         no genere error.
+    24.- El reporte de Operaciones, se orden� por cajas y cajeros.
+    25.- En Orden de Compra, el Reporte General hab�an Art�culos con cantidad en cero, se acomod� 
+         para que se muestren Art�culos con cantidad mayor que cero.
+    26.- En el Reporte de Inventario, estaba funcionando mal el bot�n de buscar las familias, 
+         fue solucionado.
+    27.- En Orden de Compra cuando se modificaba, no guardaba los cambios, el check de traer los 
+         Art�culos se mejor� para no sobreponer los art�culos ya almacenados en la tabla, 
+         (ahora se pregunta antes).
+    28.- Se arregl� por completo Tributos Municipales.
+    29.- Se corrigi� un error en el calculo del impuesto de Factura Proveedor y Orden de Compra 
+         cuando se tiene un descuento General Simultaneo.
+    30.- Se agrego al Reporte General de Orden de Compra los descuentos, impuestos y totales.
+    31.- El Men� POS, ten�a la sucursal inhabilitada, error corregido.
+    32.- Se corrigi� el problema de la permisolog�a en el m�dulo de operaciones.
+    33.- En el Reporte de Operaciones, el campo c�digo cuando se buscaba por sucursal, ten�a 
+         para escribir 3 caracteres en lugar de 4, fue arreglado.
+    34.- En Habladores, se corrigi� la b�squeda por ubicaci�n.
+    35.- El Reporte de Ganancias de Art�culos Vendidos se arregl� en cuanto a la multiplicaci�n 
+         de Art�culos vendidos x precio promedio.
+    36.- Fue arreglado los campos Departamentos, L�nea y Familia en el Reporte de Art�culos Vendidos.
+    37.- Fue arreglado los campos Departamentos, L�nea y Familia en el Reporte de Inventario.
+    38.- En el men� Cuadre de Cajero se arregl� cuando se presiona TAB se habilitaba el campo Monto.
+    39.- Se estandariz� el men� Art�culo Cup�n como todas las pantallas Maestro - Detalle.
+    40.- Se corrigi� el men� C�digos de Barras, en el buscar no se colocaba la descripci�n del art�culo.
+    41.- Se arregl� el buscar de Conciliaci�n al igual que el reporte General.
+    42.- Se arregl� el reporte de Cuadre de Cajero General y se coloc� en el campo conciliaci�n 
+         (Conciliado, No Conciliado) en lugar de true o false.
+    43.- Se visualizan ahora s�lo los Art�culos Activos en Habladores.
+    44.- Se arreglaron el n�mero de campos permitidos en la b�squeda de sucursal de men� internos.
+    45.- El Reporte de Conciliaci�n Bancaria se agrup� por Forma de Pago Global y por Banco.
+    46.- Fue arreglado el buscar de un Cajero en el modulo de Operaciones, dejaba buscar usuarios 
+         del bstore.
+    47.- Se mejor� el reporte conciliado de Cuadre de Cajero y el detallado del cuadre; al 
+         eliminar una forma de pago detallado del maestro.
+    48.- Se mejor� la b�squeda interna de los cajeros, espec�ficamente de Transferencias de Pago.
+    49.- En Art�culos en Notas de Cr�dito no funcionaba la b�squeda interna de clientes.
+    50.- Fue cambiado el nuevo logotipo de la versi�n.
+    51.- El Reporte Relaci�n de Forma de Pago se arregl� la b�squeda de Formas de Pago Detallada.
+ 
+Actualizaciones al 27-08-2010 Versi�n 2.5F-T
+    1.- Solucionado en Control de Inventario el procedimiento SelectDetailGuiInventory (faltaba una
+        relaci�n con warehouseitem).
+    2.- Solucionado el error en Cambio de Precio, no llevaba los art�culos a la bandeja de habladores.
+    3.- Al presionar el bot�n de limpiar en Art�culos, no limpia la tabla de c�digos de barra. 
+        Problema solucionado.
+    4.- N�mero de D�as v�lidos para usuario bstore arreglado.
+    5.- Conciliaci�n: este men� ten�a problemas al ordenar, no pod�a hacer las operaciones de editar, 
+        eliminar e ingresar.
+    6.- Dinero en cajas est� arreglado, ten�a un s�mbolo de % en lugar de las cajas.
+    7.- Se coloc� el * en los campos obligatorios en los men�.
+    8.- Reporte de Conciliaci�n Bancaria arreglado.
+    9.- En Factura Proveedor, cuando se editaba, no se estaba tomando en cuenta el descuento 1 y 
+        descuento 2 lineal.
+    10.- En Ordenes de Compra, se arregl� el error de null cuando se seleccionaba el Proveedor y 
+         que traiga los art�culos asociados.
+    11.- En Orden de Compra, se arregl� cuando se editaba un art�culo que estuviera en la tabla, 
+         y tenga descuento lineal...
+    12.- Arreglado bot�n limpiar de Orden de Compra.
+    13.- En Orden de Compra, al indicar un art�culo, se muestra la utilidad anterior con dos 
+         decimales de redondeo.
+    14.- Se parametriz� una etiqueta para traer la multiplicaci�n del total de art�culos por el 
+         precio de �ltima compra.
+    15.- Reporte Ventas por Proveedor, arreglado.
+    16.- Se arregl� el limpiar del Men� Art�culo. Hab�a un caso con los c�digos de barra.
+    17.- Se arregl� el tama�o de la pantalla de cup�n.
+    18.- Se arregl� el modificar y eliminar de Condiciones de Pago.
+    19.- En Cambios de Mercanc�a, ya est� corregido la operaci�n Eliminar.
+    20.- En Conciliaci�n, se le agreg� un estatus.
+    21.- Se le cambio el nombre al Reporte Ventas por Proveedor por 
+         Compras - Ventas por Proveedor.
+    22.- Cambio de Mercanc�a, al incluir se inhabilitaban los campos de proveedor, sucursal, 
+         almac�n y estatus, se arregl� para activar estos campos.
+    23.- Se le colocaron los criterios de b�squedas al reporte, Turnos de Cajero.
+    24.- Reporte Operaciones le fue agregado la caja.
+    25.- Se le agreg� Responsable en Reporte Cambio de Precios.
+    26.- Se le colocaron * a todos los campos obligatorios de todos los men�.
+    27.- Se mejor� el combobox de tipos de clientes en el men� de clientes.

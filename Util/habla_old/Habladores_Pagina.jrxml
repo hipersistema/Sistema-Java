@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Habladores_Pagina" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="732" leftMargin="30" rightMargin="30" topMargin="20" bottomMargin="20" uuid="8645ee20-ca9d-4613-ab99-9457a31a8db8">
+	<property name="ireport.scriptlethandling" value="0"/>
+	<property name="ireport.encoding" value="UTF-8"/>
+	<property name="ireport.zoom" value="0.75"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="104"/>
+	<import value="net.sf.jasperreports.engine.*"/>
+	<import value="java.util.*"/>
+	<import value="net.sf.jasperreports.engine.data.*"/>
+	<parameter name="store" class="java.lang.String"/>
+	<parameter name="codigo" class="java.lang.String"/>
+	<parameter name="fecha" class="java.lang.String" isForPrompting="false"/>
+	<queryString>
+		<![CDATA[CALL GetDataFromItemToItem('AA000', 'AAXXX', now(), '1')]]>
+	</queryString>
+	<field name="itemID" class="java.lang.String">
+		<fieldDescription><![CDATA[Código Artículo]]></fieldDescription>
+	</field>
+	<field name="longDescription" class="java.lang.String">
+		<fieldDescription><![CDATA[Descripción Larga]]></fieldDescription>
+	</field>
+	<field name="taxID" class="java.lang.String">
+		<fieldDescription><![CDATA[Código del Impuesto]]></fieldDescription>
+	</field>
+	<field name="TypePrice" class="java.lang.String"/>
+	<field name="saleprice" class="java.lang.String">
+		<fieldDescription><![CDATA[Precio de Venta]]></fieldDescription>
+	</field>
+	<field name="promotionItemPrice" class="java.lang.String">
+		<fieldDescription><![CDATA[Precio de Promocion]]></fieldDescription>
+	</field>
+	<field name="promotionName" class="java.lang.String">
+		<fieldDescription><![CDATA[Nombre de la Promoción]]></fieldDescription>
+	</field>
+	<field name="startDate" class="java.lang.String">
+		<fieldDescription><![CDATA[Fecha Inicio]]></fieldDescription>
+	</field>
+	<field name="finishDate" class="java.lang.String">
+		<fieldDescription><![CDATA[Fecha Final]]></fieldDescription>
+	</field>
+	<field name="itemstock" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="promotionStatus" class="java.lang.String">
+		<fieldDescription><![CDATA[Estado de la Promoción
+(Activa o No Activa)]]></fieldDescription>
+	</field>
+	<field name="Location" class="java.lang.String"/>
+	<variable name="SalePrice" class="java.lang.Double">
+		<variableExpression><![CDATA[$V{SalePrice}.valueOf( $F{saleprice} )]]></variableExpression>
+	</variable>
+	<variable name="PromotionItemPrice" class="java.lang.Double">
+		<variableExpression><![CDATA[$V{PromotionItemPrice}.valueOf( $F{promotionItemPrice} )]]></variableExpression>
+	</variable>
+	<variable name="promotionStatus" class="java.lang.Integer">
+		<variableExpression><![CDATA[$V{promotionStatus}.valueOf( $F{promotionStatus} )]]></variableExpression>
+	</variable>
+	<variable name="PVP" class="java.lang.Double">
+		<variableExpression><![CDATA[($F{taxID}.substring(0,1).trim().equals("1") ? $V{SalePrice}/1.12 :
+($F{taxID}.substring(0,1).trim().equals("2") ? $V{SalePrice}/1.08 :
+($F{taxID}.substring(0,1).trim().equals("3") ? $V{SalePrice}/1.22 : $V{SalePrice} ) ) )]]></variableExpression>
+	</variable>
+	<variable name="IVA" class="java.lang.Double">
+		<variableExpression><![CDATA[$V{SalePrice} - $V{PVP}]]></variableExpression>
+	</variable>
+	<variable name="PromoPrecio" class="java.lang.Double">
+		<variableExpression><![CDATA[($F{taxID}.substring(0,1).trim().equals("1") ? $V{PromotionItemPrice}/1.12 :
+($F{taxID}.substring(0,1).trim().equals("2") ? $V{PromotionItemPrice}/1.08 :
+($F{taxID}.substring(0,1).trim().equals("3") ? $V{PromotionItemPrice}/1.22 : $V{PromotionItemPrice} ) ) )]]></variableExpression>
+	</variable>
+	<variable name="IVAPROMO" class="java.lang.Double">
+		<variableExpression><![CDATA[$V{PromotionItemPrice} - $V{PromoPrecio}]]></variableExpression>
+	</variable>
+	<group name="itemID">
+		<groupExpression><![CDATA[$F{itemID}+$F{TypePrice}]]></groupExpression>
+		<groupHeader>
+			<band height="296" splitType="Stretch">
+				<textField pattern="" isBlankWhenNull="false">
+					<reportElement uuid="deb53830-e200-4c79-a33f-4d9258f43600" key="textField-1" stretchType="RelativeToBandHeight" x="0" y="96" width="732" height="200" forecolor="#000000"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" size="56" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Times-Roman" isPdfEmbedded="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{longDescription}]]></textFieldExpression>
+				</textField>
+				<image scaleImage="FillFrame" hAlign="Center" vAlign="Middle" isUsingCache="true">
+					<reportElement uuid="0e56c7b8-68b4-4bf1-b85a-478839ae3743" key="image-1" stretchType="RelativeToBandHeight" x="0" y="0" width="154" height="96"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<imageExpression><![CDATA["logo7.jpg"]]></imageExpression>
+				</image>
+				<textField pattern="" isBlankWhenNull="false">
+					<reportElement uuid="9afb7106-66be-4251-8af1-3b3c53b081d3" key="textField-3" stretchType="RelativeToBandHeight" x="154" y="0" width="578" height="68"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" size="29"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$P{store}]]></textFieldExpression>
+				</textField>
+				<textField isBlankWhenNull="false">
+					<reportElement uuid="38a6d4d6-24dd-4007-a399-c4a4d4f4e7d4" key="textField-4" x="154" y="68" width="578" height="28"/>
+					<box>
+						<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+						<bottomPen lineWidth="0.0" lineColor="#000000"/>
+						<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" size="22"/>
+					</textElement>
+					<textFieldExpression><![CDATA["RIF: " + $P{codigo}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band splitType="Stretch"/>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="250" splitType="Stretch">
+			<image>
+				<reportElement uuid="3247d546-27e3-4d3a-a7e5-998c00735e75" x="166" y="7" width="60" height="36">
+					<printWhenExpression><![CDATA[new Boolean( $V{promotionStatus}.intValue()== 1 )]]></printWhenExpression>
+				</reportElement>
+				<imageExpression><![CDATA["C:\\NewPosline\\Util\\Reportes\\equis.JPG"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="6da5f439-38e6-4fae-83f1-2b7ff54e5454" key="staticText-2" stretchType="RelativeToBandHeight" x="2" y="0" width="126" height="40" forecolor="#000000">
+					<printWhenExpression><![CDATA[new Boolean( $V{promotionStatus}.intValue()== 1 )]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="24" isBold="false" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[PV Justo:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="fe4b6aad-e479-4ed2-b160-d2e386b7da7c" key="staticText-10" x="501" y="228" width="126" height="20">
+					<printWhenExpression><![CDATA[new Boolean(!($F{taxID}.compareTo("4 - Exento")== 0))]]></printWhenExpression>
+				</reportElement>
+				<box leftPadding="2" rightPadding="2">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Fecha:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cad7036e-5948-44f0-9d5f-e42738f39c74" key="staticText-1" stretchType="RelativeToBandHeight" x="147" y="167" width="220" height="55"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="46" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total: ]]></text>
+			</staticText>
+			<textField pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+				<reportElement uuid="3887c97f-d69d-4f6d-83d7-21be24b64ff3" key="textField" stretchType="RelativeToBandHeight" x="365" y="166" width="198" height="55" forecolor="#000000">
+					<printWhenExpression><![CDATA[new Boolean( $V{promotionStatus}.intValue()== 0 )]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="46" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" isPdfEmbedded="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{SalePrice}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+				<reportElement uuid="02300c11-80b5-4482-ade8-f351905d4d8f" key="textField" stretchType="RelativeToBandHeight" x="367" y="55" width="194" height="55" forecolor="#000000">
+					<printWhenExpression><![CDATA[new Boolean( $V{promotionStatus}.intValue()== 0 )]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="36" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" isPdfEmbedded="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PVP}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+				<reportElement uuid="ec97d06c-3e7b-4d04-bb06-49ff2db52c59" key="textField" stretchType="RelativeToBandHeight" x="366" y="112" width="196" height="55" forecolor="#000000">
+					<printWhenExpression><![CDATA[new Boolean( $V{promotionStatus}.intValue()== 0 )]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="36" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" isPdfEmbedded="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{IVA}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+				<reportElement uuid="31f4b3e1-d6ee-42f9-a34c-ecc3c1fe24a2" key="textField" stretchType="RelativeToBandHeight" x="366" y="167" width="198" height="55" forecolor="#000000">
+					<printWhenExpression><![CDATA[new Boolean( $V{promotionStatus}.intValue()== 1 )]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="46" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" isPdfEmbedded="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PromotionItemPrice}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+				<reportElement uuid="5d79fe47-f3ec-4a0a-8859-64e272702d89" key="textField" stretchType="RelativeToBandHeight" x="365" y="113" width="196" height="55" forecolor="#000000">
+					<printWhenExpression><![CDATA[new Boolean( $V{promotionStatus}.intValue()== 1 )]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="36" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" isPdfEmbedded="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{IVAPROMO}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+				<reportElement uuid="482f66b1-9bc0-445a-ab4c-e65df2cb0866" key="textField" stretchType="RelativeToBandHeight" x="367" y="57" width="193" height="55" forecolor="#000000">
+					<printWhenExpression><![CDATA[new Boolean( $V{promotionStatus}.intValue()== 1 )]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="36" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" isPdfEmbedded="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{PromoPrecio}]]></textFieldExpression>
+			</textField>
+			<textField pattern="#,##0.00;-#,##0.00" isBlankWhenNull="true">
+				<reportElement uuid="de623eec-8dcc-4b1d-a5a6-3d790b1d8e8e" key="textField" stretchType="RelativeToBandHeight" x="128" y="0" width="98" height="40" forecolor="#000000">
+					<printWhenExpression><![CDATA[new Boolean( $V{promotionStatus}.intValue()== 1 )]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="24" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" isPdfEmbedded="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{SalePrice}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="2969e90b-5bd4-4b5b-a779-4482e2f1ef55" key="staticText-1" stretchType="RelativeToBandHeight" x="147" y="56" width="220" height="55">
+					<printWhenExpression><![CDATA[new Boolean( $V{promotionStatus}.intValue()== 1 )]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="36" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Oferta Bs: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="928eb060-65fd-409f-8816-181d3c5a56d1" key="staticText-1" stretchType="RelativeToBandHeight" x="147" y="58" width="220" height="55">
+					<printWhenExpression><![CDATA[new Boolean( $V{promotionStatus}.intValue()== 0 )]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="36" isBold="false"/>
+				</textElement>
+				<text><![CDATA[PV Justo:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="f73fed31-fa26-4b4d-83d5-8e892bdfa76e" x="264" y="222" width="220" height="26">
+					<printWhenExpression><![CDATA[new Boolean( $V{promotionStatus}.intValue()== 1 )]]></printWhenExpression>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{promotionName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="034532c4-8704-41a8-8216-f382c327e6d6" x="88" y="223" width="169" height="26"/>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{itemID}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="1f0792a2-8d97-467a-847d-ab501d486193" key="staticText-10" x="27" y="223" width="61" height="26"/>
+				<box leftPadding="2" rightPadding="2">
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true" pdfFontName="Helvetica-Bold"/>
+				</textElement>
+				<text><![CDATA[Código:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6d3de045-f108-4c0b-b178-ccaae3c06d2b" key="staticText-1" stretchType="RelativeToBandHeight" x="147" y="111" width="220" height="55">
+					<printWhenExpression><![CDATA[new Boolean( $V{promotionStatus}.intValue()== 0 )]]></printWhenExpression>
+				</reportElement>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Arial" size="36" isBold="false"/>
+				</textElement>
+				<text><![CDATA[IVA:]]></text>
+			</staticText>
+			<textField evaluationTime="Report" pattern="MM-yyyy" isBlankWhenNull="false">
+				<reportElement uuid="8c8cf41d-1df4-4713-a051-8df1b68f075b" key="textField-13" x="627" y="227" width="104" height="20"/>
+				<box>
+					<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="0.0" lineColor="#000000"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,49 @@
+# === Origen de actualizaciones en la intranet ===
+appbase = http://172.26.1.100:9000/newPosline
+
+# === Directorio de trabajo local que gestiona Getdown ===
+# appdir = appdir
+
+# === Clase principal de tu aplicación ===
+class = com.cplg.back.sesion.src.InicioSesion
+
+# === UI opcional de Getdown durante actualización ===
+ui.name = Posline NE Back-Store – Actualizando, espere un momento por favor ...
+# ui.background = ui/background.png
+# ui.progress   = ui/progress.png
+
+# === Versión ===
+version = 202609221535
+
+# === Artefactos de código ===
+# Jar principal
+code = Bstore.jar
+
+# === Recursos que deben actualizarse desde el servidor ===
+resource = Util/Reportes/inventorydetail.jasper
+resource = Util/Reportes/inventorydetaildifference.jasper
+resource = Util/Reportes/reportearticuloestadistico.jasper
+resource = Util/Reportes/ReportsInventaryDifferents.jasper
+
+resource = Varios/firma.jpg
+resource = Varios/FONDO.jpg
+
+# === Carpeta de logs local (no se descarga) ===
+logdir = log
+
+# === Java requerido ===
+java_min_version = 1080040
+
+# Si incluirás un JRE embebido en el servidor:
+# (coloca jre/ en el servidor y Getdown lo descargará al cliente la primera vez)
+# java_location = jre/bin/java
+
+# === Parámetros JVM (ajústalos a tu app)
+jvmargs = -Xms256m
+jvmargs = -Xmx2048m
+jvmargs = -Dfile.encoding=UTF-8
+jvmargs = -Dawt.useSystemAAFontSettings=on
+
+# === Autoupdate antes de lanzar la app ===
+auto = true
+max_download_attempts = 3
